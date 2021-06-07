@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD-RunApp", "HD-RunApp\HD-RunApp.csproj", "{C38BAFCD-D397-467B-8C62-FC1C978C4FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD-StartLauncher", "HD-StartLauncher\HD-StartLauncher.csproj", "{3F15A7AC-9811-4778-9158-94DEF2D654ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD-Frontend", "HD-Frontend\HD-Frontend.csproj", "{618BE97B-4578-4BF7-8FAB-F9277ACF41C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD-ApkHandler", "HD-ApkHandler\HD-ApkHandler.csproj", "{37F6DD1A-2575-44A0-BB4F-D48A44D5603F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD-Service", "HD-Service\HD-Service.csproj", "{AA57AFC5-5D38-4248-8360-314B6A6AC59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HD-Agent", "HD-Agent\HD-Agent.csproj", "{9DF65B4D-2BDC-4DDD-83D0-578E8CF92018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C38BAFCD-D397-467B-8C62-FC1C978C4FB0}.Debug|x86.ActiveCfg = Debug|x86
+		{C38BAFCD-D397-467B-8C62-FC1C978C4FB0}.Debug|x86.Build.0 = Debug|x86
+		{C38BAFCD-D397-467B-8C62-FC1C978C4FB0}.Release|x86.ActiveCfg = Release|x86
+		{C38BAFCD-D397-467B-8C62-FC1C978C4FB0}.Release|x86.Build.0 = Release|x86
+		{3F15A7AC-9811-4778-9158-94DEF2D654ED}.Debug|x86.ActiveCfg = Debug|x86
+		{3F15A7AC-9811-4778-9158-94DEF2D654ED}.Debug|x86.Build.0 = Debug|x86
+		{3F15A7AC-9811-4778-9158-94DEF2D654ED}.Release|x86.ActiveCfg = Release|x86
+		{3F15A7AC-9811-4778-9158-94DEF2D654ED}.Release|x86.Build.0 = Release|x86
+		{618BE97B-4578-4BF7-8FAB-F9277ACF41C9}.Debug|x86.ActiveCfg = Debug|x86
+		{618BE97B-4578-4BF7-8FAB-F9277ACF41C9}.Debug|x86.Build.0 = Debug|x86
+		{618BE97B-4578-4BF7-8FAB-F9277ACF41C9}.Release|x86.ActiveCfg = Release|x86
+		{618BE97B-4578-4BF7-8FAB-F9277ACF41C9}.Release|x86.Build.0 = Release|x86
+		{37F6DD1A-2575-44A0-BB4F-D48A44D5603F}.Debug|x86.ActiveCfg = Debug|x86
+		{37F6DD1A-2575-44A0-BB4F-D48A44D5603F}.Debug|x86.Build.0 = Debug|x86
+		{37F6DD1A-2575-44A0-BB4F-D48A44D5603F}.Release|x86.ActiveCfg = Release|x86
+		{37F6DD1A-2575-44A0-BB4F-D48A44D5603F}.Release|x86.Build.0 = Release|x86
+		{AA57AFC5-5D38-4248-8360-314B6A6AC59D}.Debug|x86.ActiveCfg = Debug|x86
+		{AA57AFC5-5D38-4248-8360-314B6A6AC59D}.Debug|x86.Build.0 = Debug|x86
+		{AA57AFC5-5D38-4248-8360-314B6A6AC59D}.Release|x86.ActiveCfg = Release|x86
+		{AA57AFC5-5D38-4248-8360-314B6A6AC59D}.Release|x86.Build.0 = Release|x86
+		{9DF65B4D-2BDC-4DDD-83D0-578E8CF92018}.Debug|x86.ActiveCfg = Debug|x86
+		{9DF65B4D-2BDC-4DDD-83D0-578E8CF92018}.Debug|x86.Build.0 = Debug|x86
+		{9DF65B4D-2BDC-4DDD-83D0-578E8CF92018}.Release|x86.ActiveCfg = Release|x86
+		{9DF65B4D-2BDC-4DDD-83D0-578E8CF92018}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

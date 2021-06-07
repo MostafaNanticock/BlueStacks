@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{618BE97B-4578-4BF7-8FAB-F9277ACF41C9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>HD-Frontend</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BlueStacks.hyperDroid.Frontend.Console</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>..\bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\winsxs\amd64_netfx-system.windows.forms_b03f5f7f11d50a3a_6.1.7601.18523_none_8372b29e7b5ffae3\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="JSON">
+      <HintPath>D:\source\Blue stacks\Blue Stacks\BlueStacks\BlueStacks\JSON.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Windows\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>D:\source\Blue stacks\Blue Stacks\BlueStacks\BlueStacks\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>D:\source\Blue stacks\Blue Stacks\BlueStacks\BlueStacks\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Windows\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.ServiceProcess\2.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Management\2.0.0.0__b03f5f7f11d50a3a\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.VisualBasic\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlueStacks.hyperDroid.Audio\Manager.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Cloud.Services\Auth.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Cloud.Services\EService.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Cloud.Services\Service.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Cloud.Services\SMS.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Cloud.Services\Sync.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common.HTTP\Client.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common.HTTP\Server.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common.HTTP\Utils.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common.Interop\SparseFile.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common.Interop\Window.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common.UI\MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Common\Agent.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\AppInfo.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\Features.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\GoogleAnalytics.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\GraphicsDriverData.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\GuestNetwork.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\HTTPUtils.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\IniFile.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\JsonParser.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\KeyboardSend.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\LoadingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Common\Logger.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\MonitorLocator.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\RandomGenerator.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\RequestData.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\SecureUserData.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\SerialWorkQueue.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\Stats.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\Strings.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\Toast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Common\UIHelper.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\User.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\Utils.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Common\VmCmdHandler.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Core.VMCommand\Command.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Device\Profile.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\Animate.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\Common.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\DWM.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\Input.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\Manager.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\Monitor.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\MouseHWheel.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\Opengl.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend.Interop\Video.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\Console.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Frontend\ControlBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Frontend\Cursor.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\FileImporter.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\FrontendButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Frontend\FullScreenToast.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\GamePad.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\GraphicsDriverUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Frontend\HTTPHandler.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\IControlHandler.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\InputMapper.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\InputMapperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Frontend\InputMapperTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Frontend\Keyboard.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\Monitor.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\Mouse.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\OpenSensor.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\SensorDevice.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\StatusMessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.Frontend\UsageTime.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Frontend\VmxChecker.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Gps\Manager.cs" />
+    <Compile Include="BlueStacks.hyperDroid.Locale\Strings.cs" />
+    <Compile Include="BlueStacks.hyperDroid.ThinInstaller\ApkStrings.cs" />
+    <Compile Include="BlueStacks.hyperDroid.ThinInstaller\ThinInstallerUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\AMMediaType.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\BitmapInfoHeader.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\Camera.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\CameraError.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\CaptureGraph.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\CaptureGraphBuilder2.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\ColorFormatNotSupported.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\CreateDevEnum.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\DeviceEnumerator.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\ErrorHandler.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\FilterGraph.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\FilterInfo.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\FilterState.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\Guids.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IAMCopyCaptureFileProgress.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IAMStreamConfig.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IBaseFilter.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\ICaptureGraphBuilder2.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\ICreateDevEnum.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IEnumFilters.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IEnumMediaTypes.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IEnumPins.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IErrorLog.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IFileSinkFilter.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IFilterGraph.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IFilterGraph2.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IGraphBuilder.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IMediaControl.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IMediaFilter.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IMediaSample.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IPersist.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IPin.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IPropertyBag.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\IReferenceClock.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\ISampleGrabber.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\ISampleGrabberCB.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\Manager.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\PinDirection.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\PinInfo.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\RECT.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\SampleGrabber.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\SupportedColorFormat.cs" />
+    <Compile Include="BlueStacks.hyperDroid.VideoCapture\VideoInfoHeader.cs" />
+    <Compile Include="BlueStacks.hyperDroid\Version.cs" />
+    <Compile Include="Downloader.cs" />
+    <Compile Include="Microsoft.Samples.TabletPC.MTScratchpad.WMTouch\WMTouchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplitDownloader.cs" />
+    <Compile Include="SplitFile.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
